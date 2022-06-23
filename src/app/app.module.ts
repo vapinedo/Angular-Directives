@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChildComponent } from './components/child/child.component';
     NavbarComponent,
     PageHeaderComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

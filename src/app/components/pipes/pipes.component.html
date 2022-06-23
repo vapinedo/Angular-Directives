@@ -1,0 +1,191 @@
+<app-page-header>
+    <h2 class="title">
+        Angular Directives
+        <small class="subtitle text-muted"> :: Pipes</small>
+    </h2>
+</app-page-header>
+
+<h3 class="text-muted">String Pipes</h3>
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Original</th>
+            <th scope="col">With Pipe</th>
+            <th scope="col">Pipe name</th>
+            <th scope="col">Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>{{legends[0]}}</td>
+            <td>{{legends[0] | lowercase}}</td>
+            <td>lowercase</td>
+            <td><code>value | lowercase</code></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>{{legends[1]}}</td>
+            <td>{{legends[1] | uppercase}}</td>
+            <td>uppercase</td>
+            <td><code>value | uppercase</code></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>{{legends[2]}}</td>
+            <td>{{legends[2] | titlecase}}</td>
+            <td>titlecase</td>
+            <td><code>value | titlecase</code></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>{{crack}}</td>
+            <td>{{crack | json}}</td>
+            <td>json</td>
+            <td><code>value | json</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="text-muted">Number Pipes</h3>
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Original</th>
+            <th scope="col">With Pipe</th>
+            <th scope="col">Pipe name</th>
+            <th scope="col">Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>3.146532</td>
+            <td>{{3.146532 | number:'1.1-2'}}</td>
+            <td>number</td>
+            <td><code>value | number:'1.1-2'</code></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>3.146532</td>
+            <td>{{3.146532 | number:'1.2-3'}}</td>
+            <td>number</td>
+            <td><code>value | number:'1.2-3'</code></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>0.75</td>
+            <td>{{0.75 | percent}}</td>
+            <td>percent</td>
+            <td><code>value | percent</code></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>55.99</td>
+            <td>{{55.99 | currency}}</td>
+            <td>currency</td>
+            <td><code>value | currency</code></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>250.000</td>
+            <td>{{250.000 | currency: 'USD'}}</td>
+            <td>currency</td>
+            <td><code>value | currency: 'USD'</code></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>250.000</td>
+            <td>{{250.000 | currency: 'USD': 'code'}}</td>
+            <td>currency</td>
+            <td><code>value | currency: 'USD': 'code'</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="text-muted">Date Pipes</h3>
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Original</th>
+            <th scope="col">With Pipe</th>
+            <th scope="col">Pipe name</th>
+            <th scope="col">Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>{{date}}</td>
+            <td>{{date | date}}</td>
+            <td>date</td>
+            <td><code>value | date</code></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'short'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'short'</code></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'medium'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'medium'</code></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'long'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'long'</code></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'shortDate'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'shortDate'</code></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'mediumDate'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'mediumDate'</code></td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'longDate'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'longDate'</code></td>
+        </tr>
+        <tr>
+            <th>8</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'shortTime'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'shortTime'</code></td>
+        </tr>
+        <tr>
+            <th>9</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'mediumTime'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'mediumTime'</code></td>
+        </tr>
+        <tr>
+            <th>10</th>
+            <td>{{date}}</td>
+            <td>{{date | date: 'longTime'}}</td>
+            <td>date</td>
+            <td><code>value | date: 'longTime'</code></td>
+        </tr>
+    </tbody>
+</table>
