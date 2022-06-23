@@ -1,6 +1,29 @@
+<div class="d-flex justify-content-between">
+    <h3 class="text-muted">Real Madrid Legends</h3>
 
-<h3 *ngIf="displayTitle; else elseBlock">Real Madrid</h3>
+    <button (click)="toggleLegends()"
+        [ngClass]="showPastLegends ? 'btn btn-info' : 'btn btn-primary'">
+        <span *ngIf="showPastLegends">See New Legends</span>
+        <span *ngIf="!showPastLegends">See Past Legends</span>
+    </button>
+</div>
 
-<ng-template #elseBlock>
-    <h3>Title now is hidden.</h3>
+<div *ngIf="showPastLegends; then pastLegends; else newLegends"></div>
+
+<ng-template #pastLegends>
+    <ul>
+        <li>Luis Figo</li>
+        <li>Zidane</li>
+        <li>Ronaldo</li>
+        <li>Roberto Carlos</li>
+    </ul>
+</ng-template>
+
+<ng-template #newLegends>
+    <ul>
+        <li>Cristiano Ronaldo</li>
+        <li>Marcelo</li>
+        <li>Tony Kroos</li>
+        <li>Luka Modric</li>
+    </ul>
 </ng-template>

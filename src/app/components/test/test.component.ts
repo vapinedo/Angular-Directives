@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  displayTitle: boolean = false;
+  showPastLegends: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleLegends() {
+    this.showPastLegends = !this.showPastLegends;
   }
 
 }
