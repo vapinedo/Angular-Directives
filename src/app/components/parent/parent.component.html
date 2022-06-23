@@ -1,0 +1,17 @@
+<app-page-header>
+    <h2 class="title">
+        Angular Directives
+        <small class="subtitle text-muted"> :: Input & Output</small>
+    </h2>
+</app-page-header>
+
+<div class="d-flex justify-content-between">
+    <h3 class="text-muted">Parent Component</h3>
+    <button (click)="sendMessageToChild()" class="btn btn-primary">Send message to child</button>
+</div>
+
+<div class="border-box">
+    <h5 class="text-muted">{{childMessage}}</h5>
+</div>
+
+<app-child (childEvent)="childMessage=$event" [parentData]="message"></app-child>

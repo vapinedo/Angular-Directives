@@ -8,6 +8,8 @@ import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
     NgIfComponent,
     NgSwitchComponent,
     NavbarComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
