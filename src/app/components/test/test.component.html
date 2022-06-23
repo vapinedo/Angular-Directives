@@ -1,0 +1,6 @@
+
+<h3 *ngIf="displayTitle; else elseBlock">Real Madrid</h3>
+
+<ng-template #elseBlock>
+    <h3>Title now is hidden.</h3>
+</ng-template>
