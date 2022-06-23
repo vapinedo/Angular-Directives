@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgSwitchComponent,
+    NavbarComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,14 @@
+<app-page-header>
+    <h2 class="title">
+        Angular Directives
+        <small class="subtitle text-muted"> :: *ngIf</small>
+    </h2>
+</app-page-header>
+
 <div class="d-flex justify-content-between">
     <h3 class="text-muted">Real Madrid Legends</h3>
 
-    <button (click)="toggleLegends()"
-        [ngClass]="showPastLegends ? 'btn btn-info' : 'btn btn-primary'">
+    <button (click)="toggleLegends()" [ngClass]="showPastLegends ? 'btn btn-info' : 'btn btn-primary'">
         <span *ngIf="showPastLegends">See New Legends</span>
         <span *ngIf="!showPastLegends">See Past Legends</span>
     </button>
