@@ -5,4 +5,15 @@
     </h2>
 </app-page-header>
 
-<p>ng switch</p>
+<div class="d-flex justify-content-between">
+    <h3 class="text-muted">Real Madrid Legends</h3>
+
+    <button class="btn btn-outline-primary">Call to Action</button>
+</div>
+
+<div [ngSwitch]="legends">
+    <p *ngSwitchCase="'cr7'">You picked Cristiano Ronaldo</p>
+    <p *ngSwitchCase="'benzema'">You picked Karim Benzema</p>
+    <p *ngSwitchCase="'modric'">You picked Luka Modric</p>
+    <p *ngSwitchDefault>Pick again</p>
+</div>
