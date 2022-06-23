@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { TestComponent } from './components/test/test.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
